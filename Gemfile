@@ -14,10 +14,11 @@ gem 'bootstrap-sass'
 gem 'figaro'
 # Use bcrypt for encrypting User passwords
 gem 'bcrypt'
+gem 'pg', '~> 0.11'
 
 group :production do
 	# Use Postgres for production environment (As Heroku only supports this)
-  gem 'pg', '~> 0.15'
+  gem 'pg', '~> 0.11'
   gem 'rails_12factor'
 end
 
