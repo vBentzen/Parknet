@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+#create drift messages
+10.times do
+    Drift.create!(
+        title: Faker::HarryPotter.character,
+        body: Faker::HarryPotter.quote,
+        created_at: "2017-11-29  10:31:00"
+    )
+end
+
+puts "Seed finished"
+puts "#{Drift.count} drift messages created!"

@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-center">Drift</h3>
+            <%= link_to "Ny drift besked", new_drift_path, class: 'btn btn-success' %>
+        <% @drifts.each do |drift| %>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><%= drift.title %></h4>
+                    <h6><%= drift.created_at %></h6>
+                    <p><%= drift.body %></p>
+                </div>
+            </div>
+        <% end %>    
+    </div>
+</div>
