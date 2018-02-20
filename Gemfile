@@ -12,8 +12,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'figaro'
+# Use bcrypt for encrypting User passwords
+gem 'bcrypt'
 
 group :production do
+	# Use Postgres for production environment (As Heroku only supports this)
   gem 'pg'
   gem 'rails_12factor'
 end
