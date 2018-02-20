@@ -220,7 +220,7 @@ DEPENDENCIES
   faker
   figaro
   jquery-rails
-  pg
+  pg (~> 1.0)
   pry-rails
   puma (= 3.9.1)
   rails (= 4.2.8)
