@@ -1,24 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Parknet</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="AskeB">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ======= Title ======= -->
+    <title>Parknet</title>
+    <!-- ======= Favicon Icon ======= -->
+    <link rel="icon" href="images/logo.png">
+    <!-- ======= Fonts ======= -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <!-- ======= Stylesheets ======= -->
+    <link rel="Stylesheet" href="app/assets/stylesheet/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="app/assets/stylesheet/css/slick/slick.css">
+    <link rel="stylesheet" href="app/assets/stylesheet/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="app/assets/stylesheet/css/animate.css">
+    <link rel="stylesheet" href="app/assets/stylesheet/css/magnific-popup.css">
+    <link rel="stylesheet" href="app/assets/stylesheet/css/styles.css">
+    <link rel="stylesheet" href="app/assets/stylesheet/css/styles-responsive.css">
+  <%= stylesheet_link_tag "styles-responsive.css" %>
+  <%= stylesheet_link_tag "styles.scss" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container">
-    <ul class="nav nav-tabs">
-      <li><%= link_to "Parknet", root_path %></li>
-      <li><%= link_to "Internet", "#" %></li>
-      <li><%= link_to "Tv" "#" %></li>
-      <li><%= link_to "Telefoni" "#" %></li>
-      <li><%= link_to "Generelt" "#" %></li>
-      <li><%= link_to "Drift" "#" %></li>
-      <li><%= link_to "Kontakt" "#" %></li>
-    </ul>
-  
+    <!-- ======= Top Header ======= -->
+    <div class="top-header">
+        <div class="container">
+            <ul class="list-inline hidden-xs mini-contact">
+                <li><a role="button">36906000 45+</a></li>
+                <li><a role="button">Support@parknet.dk</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ======= Header ======= -->
+    <header class="navbar" data-spy="affix" data-offset-top="197">
+        <div class="container">
+            <a href="index.html" class="logo">
+              <%= image_tag("/assets/parknetlogo.png",  alt: "ParknetLogo", class: "img-responsive") %>
+                <div class="logo-txt">
+                    <b>Parknet</b><br>
+                    <span>Din internet og tv udbyder</span>
+                </div>
+            </a>
+            <!-- ======= Mobile Menu ======= -->
+            <a role="button" class="mobile-menu-icon visible-xs visible-sm"><i class="icon ion-navicon-round"></i></a>
+            <div class="mobile-menu visible-sm visible-xs">
+                <ul class="list-unstyled menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="main-color">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button">Hosting<i class="icon ion-record"></i></a>
+                        <ul class="list-unstyled dropdown mega-dropdwon">
+                            <li>
+                                <a href="hosting-shared.html">
+                                    <img src="images/hosting/host-1.png" class="img-responsive" alt="">
+                                    <div class="text">
+                                        <p class="p-l"><b>Shared Hosting</b></p>
+                                        <p>Consectetuer donec aliquam sit</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="hosting-cloud.html">
+                                    <img src="images/hosting/host-2.png" class="img-responsive" alt="">
+                                    <div class="text">
+                                        <p class="p-l"><b>Cloud Hosting</b></p>
+                                        <p>Consectetuer donec aliquam sit</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="no-border">
+                                <a href="hosting-dedicated.html">
+                                    <img src="images/hosting/host-3.png" class="img-responsive" alt="">
+                                    <div class="text">
+                                        <p class="p-l"><b>Dedicated Hosting</b></p>
+                                        <p>Consectetuer donec aliquam sit</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="domain.html">Domains</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button">Pages<i class="icon ion-record"></i></a>
+                        <ul class="list-unstyled dropdown">
+                            <li><a href="domain-search.html">Domain Search</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="404.html">404 Error</a></li>
+                            <li><a href="comingsoon.html">Coming soon</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li class="no-border"><a href="cart.html">Cart</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button">Blog<i class="icon ion-record"></i></a>
+                        <ul class="list-unstyled dropdown">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="single.html">Single Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="no-border">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ======= Main Menu ======= -->
+            <nav class="navbar hidden-xs hidden-sm">
+                <ul class="list-inline list-unstyled menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="main-color">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button">Hosting<i class="icon ion-record"></i></a>
+                        <ul class="list-unstyled dropdown mega-dropdwon">
+                            <li>
+                                <a href="hosting-shared.html">
+                                    <img src="images/hosting/host-1.png" class="img-responsive" alt="">
+                                    <div class="text">
+                                        <p class="p-l main-color2"><b>Shared Hosting</b></p>
+                                        <p>Consectetuer donec aliquam sit</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="hosting-cloud.html">
+                                    <img src="images/hosting/host-2.png" class="img-responsive" alt="">
+                                    <div class="text">
+                                        <p class="p-l main-color2"><b>Cloud Hosting</b></p>
+                                        <p>Consectetuer donec aliquam sit</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="no-border">
+                                <a href="hosting-dedicated.html">
+                                    <img src="images/hosting/host-3.png" class="img-responsive" alt="">
+                                    <div class="text">
+                                        <p class="p-l main-color2"><b>Dedicated Hosting</b></p>
+                                        <p>Consectetuer donec aliquam sit</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="domain.html">WappaLub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button">Pages<i class="icon ion-record"></i></a>
+                        <ul class="list-unstyled dropdown">
+                            <li><a href="domain-search.html">Domain Search</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="404.html">404 Error</a></li>
+                            <li><a href="comingsoon.html">Coming soon</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li class="no-border"><a href="cart.html">Cart</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button">Blog<i class="icon ion-record"></i></a>
+                        <ul class="list-unstyled dropdown">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="single.html">Single Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="no-border">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <% if flash[:notice] %>
         <div class="alert alert-success">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
